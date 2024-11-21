@@ -16,7 +16,7 @@ namespace DA.Dapper.Repositorios
         public RepositorioDapper(IConfiguration configuration)
         {
             _configuration = configuration;
-            _conexionBaseDatos = new SqlConnection(_configuration.GetConnectionString("BD"));
+            _conexionBaseDatos = new SqlConnection(_configuration.GetConnectionString("PracticaSem1"));
         }
 
         public SqlConnection _conexionBaseDatos { get; }
